@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<title>Eran Schweitzer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/htmlExportStyleSheet.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.cvblue {color:#3873B3}
+.cvblue-hover:hover{background-color:#000!important;color:#3873B3!important}
+.cvblue-text-hover:hover{color:#3873B3!important}
+h1,h2,h3,h4,h5,h6 {color:#3873B3}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('images/EranPic.jpg');
+    min-height: 300px;
+}
+.float_center {
+  float: left;
+
+  position: relative;
+  left: 50%; /* or right 50% */
+  text-align: right;
+}
+.float_center > .child {
+  position: relative;
+  right: 50%;
+}
+
+form {display: inline;}
+
+@media (min-width:993px){.w3-hide-large-margin{margin-left:auto!important}}
+@media (min-width:601px){.w3-hide-medium-pic{width: 120px!important}}
+</style>
+<body>
+
+<!-- Sidenav with image -->
+<nav class="w3-sidenav w3-hide-medium w3-hide-small" style="width:20%">
+  <div class="bgimg w3-margin-top"></div>
+  <a class="w3-small w3-center w3-text-grey w3-hover-white" href="http://www.yansfotos.net/" target="_blank">Photo by Yansfotos</a>
+  <div class="w3-center w3-padding-16" > 
+    <form method="get" target="_blank" action="images/EranSchweitzerCV.pdf">
+    <button type="submit" class="w3-btn w3-light-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> CV (English)
+    </button>
+    </form>
+    <form method="get" target="_blank" action="images/EranSchweitzerCVDeutsch.pdf">
+    <button type="submit" class="w3-btn w3-light-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> CV (German)
+    </button>
+    </form>
+  </div>
+  <div class="w3-padding-4 w3-center w3-opacity w3-xlarge" >
+    <!--<a target="_blank" href="http://www.youtube.com/soundsemantics">
+    <i class="float_center fa fa-youtube-play w3-hover-text-red"></i></a> -->
+  <!--  <i class="float_center fa fa-linkedin w3-hover-text-indigo"></i> -->
+  <a style="display: inline-block" class="w3-hover-white" target="_blank" href="https://www.linkedin.com/in/eranschweitzer"><i class="fa fa-linkedin cvblue-text-hover"></i></a>
+  <a style="display: inline-block" class="w3-hover-white" target="_blank" href="https://github.com/eranschweitzer"><i class="fa fa-github cvblue-text-hover"></i></a>
+  </div>
+</nav>
+
+<!-- Hidden Sidenav (reveals when clicked on menu icon)-->
+<nav class="w3-sidenav w3-black w3-animate-right w3-center w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidenav">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-closenav w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-text-grey cvblue-hover" onclick="closeNav()">Home</a>
+  <a href="#about" class="w3-text-grey cvblue-hover" onclick="closeNav()">About</a>
+  <a href="#publications" class="w3-text-grey cvblue-hover" onclick="closeNav()">Publications</a>
+  <a href="#awards" class="w3-text-grey cvblue-hover" onclick="closeNav()">Awards & Honors</a>
+  <a href="#contact" class="w3-text-grey cvblue-hover" onclick="closeNav()">Contact</a>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:20%; w3-hide-large-margin">
+
+  <!-- Menu icon to open sidenav -->
+  <span class="w3-opennav w3-top w3-padding-top w3-xxlarge w3-margin-right w3-text-grey cvblue-text-hover" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-padding-128 w3-center" id="home">
+    <h1 class="w3-xxlarge"><b>Eran Schweitzer</b></h1>
+    <p>PhD Student<br>School of Electrical, Computer and Engergy Engineering<br>Arizona State University</p>
+    <img src="images/EranPic.jpg" class="w3-image w3-hide-large w3-round" style="display:block;width:120px;margin:auto; ">
+    <!--img src="images/wetplate.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"-->
+    <div class="w3-center w3-padding-16 w3-hide-large"> 
+      <form method="get" target="_blank" action="images/EranSchweitzerCV.pdf">
+      <button class="w3-btn w3-light-grey w3-padding-large w3-margin-top w3-hide-large">
+        <i class="fa fa-download"></i> CV (English)
+      </button>
+      </form>
+      <form method="get" target="_blank" action="images/EranSchweitzerCVDeutsch.pdf">
+      <button class="w3-btn w3-light-grey w3-padding-large w3-margin-top w3-hide-large">
+        <i class="fa fa-download"></i> CV (German)
+      </button>
+      </form>
+    </div>
+    <div class="w3-padding-4 w3-center w3-opacity w3-xlarge w3-hide-large" >
+      <!--<a target="_blank" href="http://www.youtube.com/soundsemantics">
+      <i class="float_center fa fa-youtube-play w3-hover-text-red"></i></a> -->
+    <!-- <i class="float_center fa fa-linkedin w3-hover-text-indigo"></i> -->
+      <a style="display: inline-block" class="w3-hover-white" target="_blank" href="https://www.linkedin.com/in/eranschweitzer"><i class="fa fa-linkedin cvblue-text-hover"></i></a>
+      <a style="display: inline-block" class="w3-hover-white" target="_blank" href="https://github.com/eranschweitzer"><i class="fa fa-github cvblue-text-hover"></i></a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <!--<hr class="w3-opacity"> -->
+    <p> 
+I am currently a PhD student in the 
+<a href="http://scaglione.engineering.asu.edu/" target="_blank" class="w3-hover-white" style="text-decoration:none"><b>SINE lab</b></a> 
+at Arizona State University, under Professor Anna Scaglione.
+My research interests fall broadly under the umbrella of power system modeling and analysis. 
+Most of my work has focuses on the generation and validation of synthetic test cases based on analysis of real power systems. 
+I am also quite interested in solution approaches to the power flow and optimal power flow problems, as well as co-simulation paradigms.
+    </p>
+  <!-- End About Section -->
+  </div>
+
+  <!--Publications Section-->
+  <div class="w3-content w3-padding-32 w3-text-grey" id="publications">
+    <h2> Publications </h2>
+    <!--<hr class="w3-opacity"> -->
+    <h3> Journals </h3>
+    <ul class="w3-ul">
+      <li>
+	      <span class="Author">E. Schweitzer, A. Scaglione</span>
+	      <span class="Title">A Mathematical Programing Solution for Automatic Generation of Synthetic Power Flow Cases</span>
+	      <span class="Journal">IEEE Transactions on Power Systems</span>&nbsp;
+	      <span class="Date">2018</span>
+      </li>
+      <li>
+	      <span class="Author">E. Schweitzer, A. Scaglione, A. Monti and G. A. Pagani</span>
+	      <span class="Title">Automated Generation Algorithm for Synthetic Medium Voltage Radial Distribution Systems</span>
+	      <span class="Journal">IEEE Journal on Emerging and Selected Topics In Circuits and Systems</span>&nbsp;
+	      <span class="Date">2017</span>
+      </li>
+      <li>
+	      <span class="Author">A. B. Birchfield, E. Schweitzer, M. H. Athari, T. Xu, T. J. Overbye, A. Scaglione and Z. Wang</span>
+	      <span class="Title">A Metric-Based Validation Process to Assess the Realism of Synthetic Power Grids</span>
+	      <span class="Journal">Energies</span>&nbsp;
+	      <span class="Volume">10</span>&nbsp;
+	      <span class="Date">2017</span>
+      </li>
+    </ul>
+    <h3> Conferences </h3>
+    <ul class="w3-ul">
+      <li>
+	      <span class="Author">E. Schweitzer, J. Hansen and J. Fuller</span>
+	      <span class="Title">Transmission and Distribution Co-Simulation with Possible Distribution Loops</span>
+	      <span class="Conference">IEEE Power and Energy Society General Meeting</span>&nbsp;
+	      <span class="Date">2018</span> (Selected Best Paper)
+      </li>
+      <li>
+	      <span class="Author">E. Schweitzer, T. Xu, A. B. Birchfield, A. Scaglione, T. J. Overbye, R. J. Thomas and Z. Wang</span>
+	      <span class="Title">Towards Operational Validation: Mapping Power System Inputs to Operating Conditions</span>
+	      <span class="Conference">20th Power Systems Computation Conference</span>&nbsp;
+	      <span class="Date">2018</span>
+      </li>
+      <li>
+	      <span class="Author">M. Jamei, E. Schweitzer, A. Scaglione, K. Hedman</span>
+	      <span class="Title">Gas and Electric Grid Unit Commitment with Coordinated N-1 Generator Contingency Analysis</span>
+	      <span class="Conference">20th Power Systems Computation Conference</span>&nbsp;
+	      <span class="Date">2018</span>
+      </li>
+      <li>
+	      <span class="Author">E. Schweitzer, A. Scaglione and K. Hedman</span>
+	      <span class="Title">Assignment of Electrical Properties to Power Grid Topologies</span>
+	      <span class="Conference">51st Hawaii International Conference on System Sciences </span>&nbsp;
+	      <span class="Date">2018</span>
+      </li>
+      <li>
+	      <span class="Author">E. Schweitzer, A. Scaglione and R. Thomas</span>
+	      <span class="Title">The validationof synthetic power system cases</span>
+	      <span class="Conference">IREP'2017 Symposium</span>&nbsp;
+	      <span class="Date">2017</span>
+      </li>
+      <li>
+	      <span class="Author">E. Schweitzer, A. Scaglione, R. Thomas and T. Overbye</span>
+	      <span class="Title">Analysis of the Coupling Between Power System Topology and Operating Condition for Synthetic Test Case Validation</span>
+	      <span class="Conference">2016 Grid of the Future Symposium</span>&nbsp;
+	      <span class="Date">2016</span>
+      </li>
+      <li>
+	      <span class="Author">E. Schweitzer, K. Togawa, T. Schloesser and A. Monti</span>
+	      <span class="Title">A Matlab GUI for the Generation of Distribution Grid Models</span>
+	      <span class="Conference">ETG-Fachbericht-International ETG Congress</span>&nbsp;
+	      <span class="Date">2015</span>
+      </li>
+    </ul>
+  </div>
+
+  <!--Awards & Honors-->
+  <div class="w3-content w3-padding-32 w3-text-grey" id="awards">
+    <h2> Awards & Honors </h2>
+    <ul>
+        <li> Best Paper Award, IEEE Power and Energy Society General Meeting, 2018. </li>
+        <li> IEEE Phoenix Section Student Award, 2017. </li>
+        <li> JARA Best Master Award, 2015. </li>
+    </ul>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <!--<p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>-->
+      <!--<p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>-->
+      <!--<p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: eran &#60;dot&#62; schweitzer &#60;at&#62; asu.edu </p>-->
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: eran.schweitzer@asu.edu </p>
+    </div>
+    
+     <!-- Google Map -->
+     <!--
+    <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:300px;margin:36px 0;"></div>
+     -->
+   
+    <!--
+    <p>Lets get in touch. Send me a message:</p>
+    <form action="form.asp" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-btn w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    -->
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <!--
+    <a target="_blank" href="http://www.youtube.com/soundsemantics">
+      <i class="fa fa-youtube-play w3-hover-text-red"></i></a>
+    -->
+    <a target="_blank" href="https://www.linkedin.com/in/eranschweitzer"><i class="fa fa-linkedin cvblue-text-hover"></i></a>
+    <a target="_blank" href="https://www.github.com/eranschweitzer"><i class="fa fa-github cvblue-text-hover"></i></a>
+    <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Open and close sidenav
+function openNav() {
+  if ($(window).width() > 993) {
+    document.getElementById("mySidenav").style.width = "20%";
+  } else {
+    document.getElementById("mySidenav").style.width = "300px";
+  }
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+
+</body>
+</html>

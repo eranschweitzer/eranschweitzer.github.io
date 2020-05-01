@@ -1,0 +1,36 @@
+.Pub, .Talk, .Poster {
+	text-align: left;
+	font-size: 0.9em; 
+	line-height: 125%;
+	page-break-before: always;
+	padding-bottom: 0.8em; }
+
+.Key { font-size: 0.8em; 
+	page-break-before: always; }
+
+.Title { font-weight: bold;
+	font-size: 1.0em;
+	 }
+.Title:before{content:open-quote;}
+.Title:after{content:","close-quote" ";}
+
+.Author { }
+.Author:after{content:", "}
+.Journal, .Conference { font-style: italic; }
+.Conference:after{content:",";}
+.Journal:after{content:",";}
+.Volume { font-weight: bolder; }
+
+.Year { color: black; }
+.Date:after{content:".";}
+
+.Abstract, .Annote {
+	font-size: 0.8em;
+	line-height: 100%; 
+	padding-top: 10px; }
+
+.FieldName { font-weight: bolder; }
+
+.URL, .File { font-size: 0.8em; }
+
+.Citations { font-size: 0.8em;}
